@@ -42,7 +42,7 @@
   
     &__link {
       background-color: #686868;
-      background-image: linear-gradient(0deg,$primary-color,$secondary-color);
+      background-image: linear-gradient(0deg,lighten($primary-color, 3%),lighten($secondary-color, 3%));
       transition-duration: 0.25s;
       box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
       font-size: 13px;
@@ -329,7 +329,7 @@
       }
 
       .menu{
-        margin-top:-4rem;            
+        margin-top:-3rem;            
         border-radius:2rem 2rem 0 0;
         background-color:#f6f6f6;
         z-index:1;
@@ -364,7 +364,7 @@
         justify-content:center;
         cursor:pointer;
         position:relative;
-        background-color:lighten(#000, 60%);
+        background-color:lighten(#000, 75%);
       }
 
       .menu__btn:hover:before{
@@ -373,7 +373,7 @@
 
       .menu__btn:before{
         opacity:0;
-        transition:.5s;
+        transition:.2s;
         content:"";
         background:linear-gradient(0deg,$primary-color,$secondary-color);
       }
@@ -387,7 +387,7 @@
       }
 
       .menu__like{   
-        transition-duration:.25s;
+        transition-duration: .25s;
         background-color:#f6f6f6;
         display:flex;
         align-items:center;
@@ -425,7 +425,8 @@
       .menu-category__title {
         margin-top: 20px;        
         text-transform: uppercase;
-        position: relative;        
+        position: relative;
+        font-size: 1rem;        
         padding-bottom: 0.5rem;
         font-weight: 400;
       
@@ -561,9 +562,9 @@
       
       .buttonCommand {         
         border: 0;
-        padding: 0.75rem 1.5rem;
+        padding: 1rem 3rem;
         font-weight: 500;
-        font-size: 1.1rem;
+        font-size: 1rem;
         border-radius: 100px;
         color: #fff;
         background-color: #686868;
@@ -575,6 +576,7 @@
         &:hover {
           background-color: #fff;
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+          background-image: linear-gradient(0deg,lighten($primary-color, 3%),lighten($secondary-color, 3%));        
         }
       
         a {

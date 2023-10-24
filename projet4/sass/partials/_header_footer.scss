@@ -36,19 +36,19 @@
 &__logo {
   font-size: 22px;
   font-weight: 400;  
-  margin: 10px 0;
+  margin: 20px 0;
   font-family: Shrikhand, cursive;
  }
  @media screen and (min-width: 1440px) {
   &__logo {
-    font-size: 30px;  
+    font-size: 32px;  
   } 
  }
  &__arrow {
    font-size: 20px;
    position: absolute;
    left: 20px;
-   top: 22px;
+   top: 33px;
  }
 }
 

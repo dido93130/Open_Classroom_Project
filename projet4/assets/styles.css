@@ -56,19 +56,19 @@ a {
 .header--menu__logo {
   font-size: 22px;
   font-weight: 400;
-  margin: 10px 0;
+  margin: 20px 0;
   font-family: Shrikhand, cursive;
 }
 @media screen and (min-width: 1440px) {
   .header--menu__logo {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 .header--menu__arrow {
   font-size: 20px;
   position: absolute;
   left: 20px;
-  top: 22px;
+  top: 33px;
 }
 
 /**************loader*****************/
@@ -230,7 +230,7 @@ a {
 }
 .intro__link {
   background-color: #686868;
-  background-image: linear-gradient(0deg, #9356dc, #ff79da);
+  background-image: linear-gradient(0deg, #9b63df, #ff88de);
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   font-size: 13px;
@@ -486,7 +486,7 @@ a {
 }
 
 .menu {
-  margin-top: -4rem;
+  margin-top: -3rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
   z-index: 1;
@@ -521,7 +521,7 @@ a {
   justify-content: center;
   cursor: pointer;
   position: relative;
-  background-color: #999999;
+  background-color: #bfbfbf;
 }
 
 .menu__btn:hover:before {
@@ -530,7 +530,7 @@ a {
 
 .menu__btn:before {
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.2s;
   content: "";
   background: linear-gradient(0deg, #9356dc, #ff79da);
 }
@@ -589,6 +589,7 @@ a {
   margin-top: 20px;
   text-transform: uppercase;
   position: relative;
+  font-size: 1rem;
   padding-bottom: 0.5rem;
   font-weight: 400;
 }
@@ -621,7 +622,7 @@ a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
+  animation: itemAppear 3s cubic-bezier(0.5, 0.75, 0.34, 0.82);
   animation-delay: 0s;
   animation-fill-mode: forwards;
   max-width: 100%;
@@ -637,7 +638,7 @@ a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
+  animation: itemAppear 3s cubic-bezier(0.5, 0.75, 0.34, 0.82);
   animation-delay: 1s;
   animation-fill-mode: forwards;
   max-width: 100%;
@@ -653,7 +654,7 @@ a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
+  animation: itemAppear 3s cubic-bezier(0.5, 0.75, 0.34, 0.82);
   animation-delay: 2s;
   animation-fill-mode: forwards;
   max-width: 100%;
@@ -669,7 +670,7 @@ a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
+  animation: itemAppear 3s cubic-bezier(0.5, 0.75, 0.34, 0.82);
   animation-delay: 3s;
   animation-fill-mode: forwards;
   max-width: 100%;
@@ -685,7 +686,7 @@ a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
+  animation: itemAppear 3s cubic-bezier(0.5, 0.75, 0.34, 0.82);
   animation-delay: 4s;
   animation-fill-mode: forwards;
   max-width: 100%;
@@ -701,7 +702,7 @@ a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
+  animation: itemAppear 3s cubic-bezier(0.5, 0.75, 0.34, 0.82);
   animation-delay: 5s;
   animation-fill-mode: forwards;
   max-width: 100%;
@@ -717,7 +718,7 @@ a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
+  animation: itemAppear 3s cubic-bezier(0.5, 0.75, 0.34, 0.82);
   animation-delay: 6s;
   animation-fill-mode: forwards;
   max-width: 100%;
@@ -733,7 +734,7 @@ a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
+  animation: itemAppear 3s cubic-bezier(0.5, 0.75, 0.34, 0.82);
   animation-delay: 7s;
   animation-fill-mode: forwards;
   max-width: 100%;
@@ -749,7 +750,7 @@ a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
+  animation: itemAppear 3s cubic-bezier(0.5, 0.75, 0.34, 0.82);
   animation-delay: 8s;
   animation-fill-mode: forwards;
   max-width: 100%;
@@ -765,7 +766,7 @@ a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
+  animation: itemAppear 3s cubic-bezier(0.5, 0.75, 0.34, 0.82);
   animation-delay: 9s;
   animation-fill-mode: forwards;
   max-width: 100%;
@@ -847,9 +848,9 @@ a {
 
 .buttonCommand {
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 3rem;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 100px;
   color: #fff;
   background-color: #686868;
@@ -861,6 +862,7 @@ a {
 .buttonCommand:hover {
   background-color: #fff;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(0deg, #9b63df, #ff88de);
 }
 .buttonCommand a {
   text-decoration: none;
