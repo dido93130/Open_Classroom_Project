@@ -141,7 +141,6 @@ a {
   border: #353535;
   display: flex;
   flex-direction: column;
-  margin-top: 42px;
   padding: 1rem;
   background-color: #353535;
 }
@@ -335,6 +334,7 @@ a {
 .Restaurant__Cards {
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -475,9 +475,14 @@ a {
 
 .restaurantImage {
   max-width: 100%;
-  max-height: 32rem;
+  max-height: 230px;
   width: 100%;
   object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .restaurantImage {
+    max-height: 22rem;
+  }
 }
 
 .menu {
@@ -497,10 +502,14 @@ a {
 
 .menu__title {
   font-family: Shrikhand, "cursive";
-  margin-right: 14px;
+  font-weight: 400;
+  margin-right: 10px;
+  margin-bottom: 0;
 }
 
 .menu__btn {
+  top: 10px;
+  left: 10px;
   margin-bottom: 0;
   height: 2rem;
   width: 2rem;
@@ -553,7 +562,15 @@ a {
 @media screen and (min-width: 1024px) {
   .sub-menus {
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 1rem;
+  }
+}
+
+.sub-menus-ext {
+  display: grid;
+}
+@media screen and (min-width: 1024px) {
+  .sub-menus-ext {
+    grid-template-rows: 400px 320px 320px;
   }
 }
 
@@ -562,8 +579,14 @@ a {
   overflow: hidden;
   padding: 0 0.5rem;
 }
+@media screen and (min-width: 1024px) {
+  .menu-category {
+    padding: 0 15rem;
+  }
+}
 
 .menu-category__title {
+  margin-top: 20px;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 0.5rem;
@@ -728,6 +751,22 @@ a {
   cursor: pointer;
   animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
   animation-delay: 8s;
+  animation-fill-mode: forwards;
+  max-width: 100%;
+  opacity: 0;
+}
+
+.item-9 {
+  background-color: #fff;
+  padding: 1rem 0.65rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 5s cubic-bezier(0.5, 0.75, 0.34, 0.82);
+  animation-delay: 9s;
   animation-fill-mode: forwards;
   max-width: 100%;
   opacity: 0;
