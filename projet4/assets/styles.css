@@ -16,7 +16,7 @@ a {
 }
 
 .fa-heart {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 /*****couleurs principales*********/
@@ -59,7 +59,7 @@ a {
   margin: 20px 0;
   font-family: Shrikhand, cursive;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .header--menu__logo {
     font-size: 32px;
   }
@@ -67,7 +67,7 @@ a {
 .header--menu__arrow {
   font-size: 20px;
   position: absolute;
-  left: 20px;
+  left: 25px;
   top: 33px;
 }
 
@@ -136,8 +136,7 @@ a {
 }
 /****** footer ***********/
 .Footer {
-  position: relative;
-  bottom: 0;
+  width: 100%;
   border: #353535;
   display: flex;
   flex-direction: column;
@@ -173,20 +172,22 @@ a {
   .Footer {
     flex-direction: row-reverse;
     align-items: flex-end;
+    padding-bottom: 0;
   }
   .Footer__List {
     flex-direction: row;
     gap: 15px;
     padding-right: 60px;
+    margin-bottom: 25px;
   }
   .Footer__List__PartBreak {
     margin-right: 40px;
   }
   .Footer__Logo {
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: 25px;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 30px;
   }
 }
 
@@ -252,17 +253,9 @@ a {
   color: #7e7d7d !important;
   margin: 0 20px 20px 20px;
 }
-@media screen and (min-width: 1280px) {
-  .intro__title {
-    font-size: 32px;
-  }
-  .intro__subtitle {
-    font-size: 16px;
-  }
-}
 @media screen and (min-width: 1024px) {
   .intro__title {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
@@ -317,7 +310,7 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .Helper {
-    padding: 0 180px;
+    padding: 0 200px;
   }
 }
 
@@ -868,10 +861,6 @@ a {
   background-color: #fff;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(0deg, #9b63df, #ff88de);
-}
-.buttonCommand a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /*****couleurs principales*********/
