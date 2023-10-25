@@ -19,7 +19,7 @@
   
     &__text {
       background-color:  darken(#FFFF, 5%);
-      font-size: 13px;
+      font-size: 1rem;
       font-weight: bold;
       border: none;
     }  
@@ -44,7 +44,7 @@
       background: linear-gradient(0deg,lighten($primary-color, 5%),lighten($secondary-color, 5%));
       transition-duration: 0.25s;
       box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-      font-size: 13px;
+      font-size: 1rem;
       letter-spacing: 1px;
       border-radius: 30px;
       color: white;
@@ -60,7 +60,7 @@
     }
   
     &__subtitle {
-      font-size: 14px;
+      font-size: 1rem;
       font-weight: 100;
       color: #7e7d7d !important;
       margin: 0 20px 20px 20px;
@@ -79,15 +79,15 @@
    
     &__list {
       display: flex;
-      font-size: 14px;
+      font-size: 1rem;
       flex-direction: column;
       list-style: none;
-      padding-left: 0;  
+      padding-left: 0;        
   
       &__Cont {
         border-radius: 10px;
         margin: 1rem 1.4rem 0.25rem 1.8rem;
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
         background-color: #f6f6f6;
         box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
         position: relative;
@@ -95,7 +95,7 @@
         &::before {
           display: flex;
           justify-content: center;
-          font-size: 14px;
+          font-size: 1rem;
           align-items: center;
           position: absolute;
           border-radius: 100px;
@@ -216,7 +216,7 @@
       flex-direction: column;
       background-color: white;
       border-radius: 20px;
-      padding: 5px;
+      padding: 8px;
       filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     
       &__Img {
@@ -225,19 +225,20 @@
     
       &__Content {
         &__Title {
-          font-size: 14px;
+          font-size: 1rem;          
         }
     
         &__Subtitle {
           position: relative;
-          bottom: 10px;
-          font-size: 14px;
-          margin-left: 8px;
+          bottom: 15px;
+          font-size: 1rem;
+          margin-left: 10px;
+          color: lighten(#000000, 50%);
         }
       }
     
       &__Label {
-        font-size: 12px;
+        font-size: 1rem;
         overflow: visible;
         position: absolute;
         top: 0px;
@@ -478,15 +479,12 @@
         }
       
         &__description {
+          font-size: 16px;
           color: lighten(#000000, 65%);
           font-weight: 100;
           letter-spacing: -1.5px;
           margin: 0;     
-          overflow: hidden;
-          
-          @media screen and (min-width: 320px) {
-            font-size: 16px;
-          }      
+          overflow: hidden;        
         }
       
         &__price {
