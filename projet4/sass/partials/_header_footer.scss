@@ -160,7 +160,7 @@
         margin-right: 5px;
       }
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
        flex-direction: row-reverse;      
        align-items: flex-end;
        padding-bottom: 0;  
@@ -168,8 +168,8 @@
       &__List {
         flex-direction: row;
         gap: 15px;
-        padding-right: 60px;
-        margin-bottom: 25px;
+        padding-right: 0px;        
+        margin-bottom: 30px;
         &__PartBreak {
           margin-right: 40px;       
         }      
@@ -177,8 +177,8 @@
       &__Logo {
         margin-top:20px;
         margin-bottom: 25px;
-        margin-left: 0;
-        margin-right: 80px;
+        margin-left: 50px;
+        margin-right: 50px;
       }    
     }
   }
