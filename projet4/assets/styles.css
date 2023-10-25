@@ -380,9 +380,6 @@ a {
   .Restaurant {
     padding: 0 180px;
   }
-  .Restaurant__Cards {
-    column-gap: 60px;
-  }
 }
 .Card {
   display: flex;
