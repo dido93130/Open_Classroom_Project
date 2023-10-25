@@ -230,8 +230,7 @@ a {
   margin: 20px 45px;
 }
 .intro__link {
-  background-color: #686868;
-  background-image: linear-gradient(0deg, #9b63df, #ff88de);
+  background: linear-gradient(0deg, #a16be0, #ff93e1);
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   font-size: 13px;
@@ -243,9 +242,9 @@ a {
   margin-bottom: 25px;
 }
 .intro__link:hover {
-  background-color: #fff;
   opacity: 0.8;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(0deg, #a978e3, #ffa2e5);
 }
 .intro__subtitle {
   font-size: 14px;
@@ -839,7 +838,6 @@ a {
 
 .buttonContainer {
   display: flex;
-  text-decoration: none;
   justify-content: center;
   padding: 3rem 0;
 }
@@ -851,16 +849,14 @@ a {
   font-size: 1rem;
   border-radius: 100px;
   color: #fff;
-  background-color: #686868;
-  background-image: linear-gradient(0deg, #9356dc, #ff79da);
+  background: linear-gradient(0deg, #a16be0, #ff93e1);
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 .buttonCommand:hover {
-  background-color: #fff;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(0deg, #9b63df, #ff88de);
+  background: linear-gradient(0deg, #a978e3, #ffa2e5);
 }
 
 /*****couleurs principales*********/
