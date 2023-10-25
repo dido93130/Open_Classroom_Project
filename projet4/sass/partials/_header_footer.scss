@@ -133,9 +133,9 @@
   
     &__Logo {
       font-family: Shrikhand, "cursive";
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 400;
-      margin: 0 0 1rem;      
+      margin: 0 1rem 1rem;      
       color: darken(#FFFF, 18%);    
     }
   
@@ -143,7 +143,7 @@
       font-size: 14px;
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin: 0 1.2rem;
       display: flex;
       flex-direction: column;   
   
