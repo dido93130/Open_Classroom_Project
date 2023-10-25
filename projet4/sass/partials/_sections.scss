@@ -315,7 +315,10 @@
       .main-container{
         max-width:1280px;
         margin:auto;
-        position:relative;       
+        position:relative;
+        @media screen and (min-width: 1024px) {
+          max-width: 768px;;                   
+         }          
       }
 
       .restaurantImage {
@@ -418,7 +421,7 @@
         overflow: hidden;
         padding: 0 0.5rem;        
         @media screen and (min-width: 1024px) {
-          padding: 0 15rem;          
+          padding: 0 10rem;          
         }       
       }      
 

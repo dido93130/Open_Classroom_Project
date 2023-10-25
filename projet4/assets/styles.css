@@ -36,9 +36,9 @@ a {
   margin: 20px 0;
   font-family: Shrikhand, cursive;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .header__logo {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 .header__arrow {
@@ -59,7 +59,7 @@ a {
   margin: 20px 0;
   font-family: Shrikhand, cursive;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .header--menu__logo {
     font-size: 32px;
   }
@@ -472,6 +472,11 @@ a {
   margin: auto;
   position: relative;
 }
+@media screen and (min-width: 1024px) {
+  .main-container {
+    max-width: 768px;
+  }
+}
 
 .restaurantImage {
   max-width: 100%;
@@ -581,7 +586,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .menu-category {
-    padding: 0 15rem;
+    padding: 0 10rem;
   }
 }
 
