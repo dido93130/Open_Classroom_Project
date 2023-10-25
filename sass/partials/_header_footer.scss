@@ -1,0 +1,183 @@
+@import './variables';
+
+/**************Header Page pricipale*****************/
+  
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  
+  &__logo {
+    font-size: 22px;
+    font-weight: 400;  
+    margin: 20px 0;
+    font-family: Shrikhand, cursive;
+   }
+   @media screen and (min-width: 1440px) {
+    &__logo {
+      font-size: 30px;  
+    } 
+   }
+   &__arrow {
+     position: absolute;
+     left: 0;
+   }
+}
+
+/**************Header Pages des restaurants*****************/
+
+.header--menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    
+
+&__logo {
+  font-size: 22px;
+  font-weight: 400;  
+  margin: 10px 0;
+  font-family: Shrikhand, cursive;
+ }
+ @media screen and (min-width: 1440px) {
+  &__logo {
+    font-size: 30px;  
+  } 
+ }
+ &__arrow {
+   font-size: 20px;
+   position: absolute;
+   left: 20px;
+   top: 22px;
+ }
+}
+
+/**************loader*****************/
+  
+  $jump-duration: 1s; // Durée de l'animation jump
+  
+  .loader__itemContainer {
+    display: flex;
+    justify-content: center; // Centrer horizontalement
+    align-items: center; // Centrer verticalement
+    height: 100vh; // Ajustez la hauteur à votre besoin
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999; // Placez-le au-dessus de tout le contenu de la page
+  
+    &:before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8); // Couleur de fond en cas de chargement
+      z-index: -1; // Placez-le derrière le contenu
+    }
+  
+    animation: fade-out 0.5s 2s forwards; // Animation de fade-out pour la disparition
+  
+    @keyframes fade-out {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+  
+  .loader__item {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    margin-top: 130px;
+    animation: jump #{$jump-duration} infinite;
+    animation-iteration-count: 1;
+  }
+  
+  .loader__item-1 {
+    background-color: $primary-color;
+  }
+  
+  .loader__item-2 {
+    background-color: $secondary-color;
+    animation-delay: 0.25s;
+  }
+  
+  .loader__item-3 {
+    background-color: $tertiary-color;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1rem);
+    }
+  }
+  
+  /****** footer ***********/
+  .Footer {
+    position: relative;
+    bottom: 0;
+    border: #353535;
+    display: flex;
+    flex-direction: column;    
+    padding: 1rem;
+    background-color: #353535;  
+  
+    &__Logo {
+      font-family: Shrikhand, "cursive";
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0 0 1rem;
+      color: darken(#FFFF, 18%);    
+    }
+  
+    &__List {
+      font-size: 14px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;   
+  
+      &__Link {
+        text-decoration: none;
+        color: darken(#FFFF, 18%);
+      }
+    }
+  
+    &__Icon {
+      margin-right: 10px;
+  
+      &__Hands {
+        margin-right: 5px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+       flex-direction: row-reverse;      
+       align-items: flex-end;  
+      
+      &__List {
+        flex-direction: row;
+        gap: 15px;
+        padding-right: 60px;
+        &__PartBreak {
+          margin-right: 40px;       
+        }      
+      }
+      &__Logo {
+        margin-top:20px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+      }    
+    }
+  }
