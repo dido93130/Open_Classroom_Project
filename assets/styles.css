@@ -226,7 +226,7 @@ a {
 }
 .intro__title {
   font-size: 1.4rem;
-  margin: 20px 45px;
+  margin: 25px 45px 10px 45px;
 }
 .intro__link {
   background-color: #686868;
@@ -256,6 +256,9 @@ a {
   .intro__title {
     font-size: 2.3rem;
   }
+  .intro__subtitle {
+    font-size: 1rem;
+  }
 }
 
 /*********Hepler*****************/
@@ -281,7 +284,7 @@ a {
 .Helper__list__Cont::before {
   display: flex;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   align-items: center;
   position: absolute;
   border-radius: 100px;
@@ -289,6 +292,7 @@ a {
   width: 1.5rem;
   height: 1.5rem;
   left: -0.75rem;
+  bottom: 20px;
   counter-increment: compteListe;
   content: counter(compteListe) "";
   background: #9356dc;
@@ -297,6 +301,7 @@ a {
 .Helper__list__Cont__icon {
   padding-right: 10px;
   padding-left: 10px;
+  font-size: 1.1rem;
 }
 .Helper__list__Cont:hover .Helper__list__Cont__icon {
   color: #9356dc !important;
