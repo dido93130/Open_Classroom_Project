@@ -225,7 +225,7 @@ a {
   text-align: center;
 }
 .intro__title {
-  font-size: 20px;
+  font-size: 1.4rem;
   margin: 20px 45px;
 }
 .intro__link {
@@ -247,7 +247,7 @@ a {
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 .intro__subtitle {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 100;
   color: #7e7d7d !important;
   margin: 0 20px 20px 20px;
@@ -259,9 +259,12 @@ a {
 }
 
 /*********Hepler*****************/
+.Helper {
+  counter-reset: compteListe;
+}
 .Helper__list {
   display: flex;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   flex-direction: column;
   list-style: none;
@@ -394,17 +397,17 @@ a {
   object-fit: cover;
 }
 .Card__Content__Title {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .Card__Content__Subtitle {
   position: relative;
-  bottom: 15px;
-  font-size: 1rem;
-  margin-left: 10px;
+  bottom: 14px;
+  font-size: 0.9rem;
+  margin-left: 8px;
   color: gray;
 }
 .Card__Label {
-  font-size: 1rem;
+  font-size: 0.8rem;
   overflow: visible;
   position: absolute;
   top: 0px;

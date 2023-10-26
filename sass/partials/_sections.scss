@@ -36,7 +36,7 @@
     text-align: center;
   
     &__title {
-      font-size: 20px;
+      font-size: 1.4rem;
       margin: 20px 45px;
     }
   
@@ -61,7 +61,7 @@
     }
   
     &__subtitle {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 100;
       color: #7e7d7d !important;
       margin: 0 20px 20px 20px;
@@ -77,10 +77,11 @@
   /*********Hepler*****************/
   
   .Helper {
-   
-    &__list {
+     counter-reset: compteListe;
+
+     &__list {
       display: flex;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: bold;
       flex-direction: column;
       list-style: none;
@@ -227,20 +228,20 @@
     
       &__Content {
         &__Title {
-          font-size: 1rem;          
+          font-size: 0.9rem;          
         }
     
         &__Subtitle {
           position: relative;
-          bottom: 15px;
-          font-size: 1rem;
-          margin-left: 10px;
+          bottom: 14px;
+          font-size: 0.9rem;
+          margin-left: 8px;
           color: lighten(#000000, 50%);
         }
       }
     
       &__Label {
-        font-size: 1rem;
+        font-size: 0.8rem;
         overflow: visible;
         position: absolute;
         top: 0px;
